@@ -1,8 +1,11 @@
 "use server";
 
-export default async (prevState: FormData, formData: FormData) => {
+export interface LoginState {
+    message: string;
+}
+export async function login(prevState: LoginState, formData: FormData) {
     const email = formData.get("email") as string;
     const password = formData.get("password") as string;
 
     return { message: "success" };
-};
+}

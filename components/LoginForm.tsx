@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useActionState, useEffect, SubmitEvent } from "react";
-import login, { LoginState } from "../actions/login";
+import { login, LoginState } from "../actions/login";
 
 const initialState: LoginState = { message: "" };
 
